@@ -3,7 +3,7 @@
 app({
   appId: 'JOYMYGJ401',
   apiKey: '09a82c94d83b9c76b1859b30a02c7327',
-  indexName: 'dev_brennholz',
+  indexName: 'prod_brennholz',
   searchParameters: {
     hitsPerPage: 10,
   },
@@ -30,7 +30,7 @@ function app(opts) {
   search.addWidgets([
     instantsearch.widgets.searchBox({
       container: '#search-input',
-      placeholder: 'Search for products by name, type, brand, ...',
+      placeholder: 'Search for products by name, type, zip, price, ...',
     }),
     instantsearch.widgets.hits({
       container: '#hits',
@@ -127,7 +127,7 @@ function app(opts) {
       },
     })(instantsearch.widgets.rangeSlider)({
       container: '#price',
-      attribute: 'price',
+      attribute: 'Price',
       tooltips: {
         format(rawValue) {
           return `$${Math.round(rawValue).toLocaleString()}`;

@@ -3,7 +3,7 @@
 app({
   appId: 'JOYMYGJ401',
   apiKey: '09a82c94d83b9c76b1859b30a02c7327',
-  indexName: 'dev_brennholz',
+  indexName: 'prod_brennholz',
   searchParameters: {
     hitsPerPage: 10,
   },
