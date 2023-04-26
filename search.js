@@ -41,7 +41,7 @@ function app(opts) {
       transformItems(items) {
         return items.map(item => {
           /* eslint-disable no-param-reassign */
-          item.rating = getStarsHTML(item.stars);
+          item.starsLayout = getStarsHTML(item.stars);
           item.categories = getCategoryBreadcrumb(item);
           return item;
         });
