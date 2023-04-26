@@ -208,9 +208,9 @@ function getStarsHTML(rating, maxRating) {
   const newRating = maxRating || 5;
 
   for (let i = 0; i < newRating; ++i) {
-    html += `<span class="ais-RatingMenu-starIcon${
+    html += `<svg class="ais-RatingMenu-starIcon ais-RatingMenu-starIcon${
       i < rating ? '--full' : '--empty'
-    }"></span>`;
+    }" aria-hidden="true" width="24" height="24"> <use xlink:href="#ais-RatingMenu-starSymbol"></use> </svg>`;
   }
 
   return html;
