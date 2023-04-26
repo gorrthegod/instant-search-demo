@@ -30,7 +30,7 @@ function app(opts) {
   search.addWidgets([
     instantsearch.widgets.searchBox({
       container: '#search-input',
-      placeholder: 'Search for products by name, type, zip, price, ...',
+      placeholder: 'Suche nach Produkt, Menge, Ort, Art, Preis ....',
     }),
     instantsearch.widgets.hits({
       container: '#hits',
@@ -41,7 +41,7 @@ function app(opts) {
       transformItems(items) {
         return items.map(item => {
           /* eslint-disable no-param-reassign */
-          item.rating = getStarsHTML(item.rating);
+          item.rating = getStarsHTML('rating');
           item.categories = getCategoryBreadcrumb(item);
           return item;
         });
