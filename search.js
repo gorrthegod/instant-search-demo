@@ -208,8 +208,8 @@ function getStarsHTML(rating, maxRating) {
   const newRating = maxRating || 5;
 
   for (let i = 0; i < newRating; ++i) {
-    html += `<span class="ais-star-rating--star${
-      i < rating ? '' : '__empty'
+    html += `<span class="ais-RatingMenu-starIcon${
+      i < rating ? '--full' : '--empty'
     }"></span>`;
   }
 
