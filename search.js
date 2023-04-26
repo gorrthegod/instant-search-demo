@@ -160,7 +160,7 @@ function app(opts) {
     }),
     instantsearch.widgets.panel({
       templates: {
-        header: getHeaderTemplate('Holzart'),
+        header: getHeaderTemplate('type'),
       },
     })(instantsearch.widgets.menu)({
       container: '#type',
