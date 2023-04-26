@@ -96,19 +96,19 @@ function app(opts) {
     }),
     instantsearch.widgets.panel({
       templates: {
-        header: getHeaderTemplate('brand'),
+        header: getHeaderTemplate('Postleitzahl'),
       },
     })(instantsearch.widgets.refinementList)({
       container: '#brand',
-      attribute: 'brand',
+      attribute: 'Location zip',
       limit: 5,
       showMore: true,
       showMoreLimit: 10,
       searchable: true,
-      searchablePlaceholder: 'Search for brands',
+      searchablePlaceholder: 'Search for zip',
       templates: {
         searchableNoResults:
-          '<div class="sffv_no-results">No matching brands.</div>',
+          '<div class="sffv_no-results">No matches.</div>',
         showMoreText: `
           {{#isShowingMore}}
             <span class="isShowingLess"></span>
