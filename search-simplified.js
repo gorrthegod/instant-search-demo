@@ -68,7 +68,7 @@ function app(opts) {
       searchForFacetValues: {
         placeholder: 'Search for brands',
         templates: {
-          noResults: '<div class="sffv_no-results">No matching brands.</div>',
+          noResults: '<div class="sffv_no-results">No matchings.</div>',
         },
       },
       templates: {
@@ -77,14 +77,14 @@ function app(opts) {
     }),
     instantsearch.widgets.rangeSlider({
       container: '#price',
-      attribute: 'price',
+      attribute: 'Price',
       templates: {
         header: getHeader('Price'),
       },
     }),
     instantsearch.widgets.refinementList({
       container: '#type',
-      attribute: 'type',
+      attribute: 'Holzart',
       operator: 'and',
       templates: {
         header: getHeader('Type'),
