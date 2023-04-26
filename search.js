@@ -165,7 +165,7 @@ function app(opts) {
     })(instantsearch.widgets.menu)({
       container: '#type',
       attribute: 'Holzart',
-      limit: 20,
+      limit: 10,
       showMore: true,
       templates: {
         showMoreText: `
