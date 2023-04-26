@@ -211,8 +211,8 @@ function getStarsHTML(rating, maxRating) {
     html += `<svg class="ais-RatingMenu-starIcon ais-RatingMenu-starIcon${
       i < rating ? '--full' : '--empty'
     }" aria-hidden="true" width="24" height="24"> <use xlink:href="#ais-RatingMenu-starSymbol"></use> </svg>`;
-    html += rating + ' ';
-  }
 
+  }
+  html += rating + ' ';
   return html;
 }
