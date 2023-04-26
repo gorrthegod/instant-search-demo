@@ -41,7 +41,7 @@ function app(opts) {
       transformItems(items) {
         return items.map(item => {
           /* eslint-disable no-param-reassign */
-          item.starsLayout = getStarsHTML(item.rating);
+          item.starsLayout = getStarsHTML(item.stars);
           item.categories = getCategoryBreadcrumb(item);
           return item;
         });
@@ -136,7 +136,7 @@ function app(opts) {
     }),
     instantsearch.widgets.panel({
       templates: {
-        header: getHeaderTemplate('rating'),
+        header: getHeaderTemplate('Bewertungen'),
       },
     })(instantsearch.widgets.ratingMenu)({
       container: '#stars',
