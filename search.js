@@ -103,7 +103,7 @@ function app(opts) {
       attribute: 'Location zip',
       limit: 5,
       showMore: true,
-      showMoreLimit: 10,
+      showMoreLimit: 20,
       searchable: true,
       searchablePlaceholder: 'Search for zip',
       templates: {
